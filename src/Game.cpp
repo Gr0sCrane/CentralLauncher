@@ -1,26 +1,30 @@
 #include "Game.h"
 
-auto Game::getName() const
+
+Game::Game(std::string name,std::string platform) : name(name), platform(platform) {}
+Game::~Game() = default;
+
+std::string Game::getName() const
 {
     return name;
 }
 
-auto Game::getPath() const 
+std::string Game::getPath() const 
 {
     return path;
 }
 
-auto Game::getPlatform() const
+std::string Game::getPlatform() const
 {
     return platform;
 }
 
-auto Game::getIconPath() const
+std::string Game::getIconPath() const
 {
     return iconPath;
 }
 
-auto Game::getLastPlayed() const
+std::string Game::getLastPlayed() const
 {
     return lastPlayed;
 }

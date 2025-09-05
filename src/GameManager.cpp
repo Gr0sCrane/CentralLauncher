@@ -1,6 +1,6 @@
 #include "GameManager.h"
 
-auto GameManager::getGames() const
+std::vector<Game> GameManager::getGames() const
 {
     return games;
 }

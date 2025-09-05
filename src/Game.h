@@ -10,11 +10,15 @@ class Game {
     std::string lastPlayed;
 
 public:
-    auto getName() const;
-    auto getPath() const;
-    auto getPlatform() const;
-    auto getIconPath() const;
-    auto getLastPlayed() const;
+
+    Game(std::string name,std::string platform);
+    ~Game();
+
+    std::string getName() const;
+    std::string getPath() const;
+    std::string getPlatform() const;
+    std::string getIconPath() const;
+    std::string getLastPlayed() const;
 
     void launch();
     void toJson();
