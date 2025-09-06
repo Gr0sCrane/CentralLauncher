@@ -8,7 +8,9 @@ void showGameList(GameManager gM){
         std::cout<<"The game list is empty"<<"\n";
     }
 
+    std::cout << "|====Game List====|" << "\n";
+
     for (Game g : gM.getGames()){
-        std::cout<<"Game name : " + g.getName() + " - platform : " + g.getPlatform() <<"\n";
+        std::cout<<"Game name : " + g.getName() + " | Platform : " + g.getPlatform() <<"\n";
     }
 }
